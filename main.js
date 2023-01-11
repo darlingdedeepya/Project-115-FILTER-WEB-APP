@@ -2,7 +2,7 @@ noseX=0;
 noseY=0;
 
 function preload(){
-    clown_nose = loadImage('https://i.postimg.cc/7ZBcjDqp/clownnose.png');
+    lipstick = loadImage('https://i.postimg.cc/PxFvYgkv/l1.png')
 }
 
 function setup(){
@@ -33,11 +33,9 @@ function gotPoses(results){
 
 function draw(){
     image(video, 0, 0, 300, 300);
-    image(clown_nose, noseX-15, noseY-15, 30, 30);
+    image(lipstick, noseX-15, noseY+5, 30, 30);
 }
 
 function take_snapshot(){
     save('myFilterImage.png')
 }
-
-
